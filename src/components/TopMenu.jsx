@@ -8,11 +8,11 @@ export default class TopMenu extends Component {
   render(){
     return(
       <div>
-      <Logo title="South Derbshire Software Club" />
-      <ul className="pull-right">
-        <li><span className="btn btn-primary"></span></li>
-      </ul>
-    </div>
+        <Logo title="South Derbshire Software Club" />
+        <ul className="pull-right">
+          <li><span className="btn btn-primary"></span></li>
+        </ul>
+      </div>
     )
   }
 }

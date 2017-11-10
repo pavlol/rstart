@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 
 export default class Footer extends Component {
-  constructor() {
-
+  constructor(props) {
+    super(props);
   }
   render(){
     return(
       <div>
-        
+
       </div>
     )
   }

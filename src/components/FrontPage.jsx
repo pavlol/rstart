@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 
 export default class FrontPage extends Component {
-  constructor() {
-
+  constructor(props) {
+    super(props);
   }
   render(){
     return(
