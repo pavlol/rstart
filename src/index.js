@@ -13,7 +13,9 @@ import {
   withRouter,
   Switch
 } from 'react-router-dom'
-import TopMenu from './components/TopMenu'
+import TopMenu from './components/TopMenu';
+import ItemShow from './components/ItemShow';
+import Form from './components/Form';
 
 
 
@@ -24,6 +26,8 @@ ReactDOM.render(
         <TopMenu />
           <Switch>
             <Route path="/about" component={App} />
+            <Route path="/items/new" component={Form} />
+            <Route path="/items/:id" component={ItemShow} />
             <Route path="/" component={App} />
           </Switch>
       </div>

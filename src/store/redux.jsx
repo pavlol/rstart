@@ -5,7 +5,11 @@ import {
   createStore,
 } from 'redux';
 import thunk from 'redux-thunk';
+import promise from 'redux-promise';
 import reducers from '../reducers/index';
+
+//const createStoreWithMiddleware = applyMiddleware(promise)(createStore....)
+//export const store = createStoreWithMiddleware(reducers);
 
 export const store = createStore(reducers, {
   user:{name:"Dave", age:"30", pic:["url1", "url2"],},

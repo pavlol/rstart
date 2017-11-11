@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import * as actions from '../actions';
-import {FETCH_ITEMS} from '../actions';
+import {FETCH_ITEMS, FETCH_ITEM, DELETE_POST} from '../actions';
 
 // export const FETCH_POSTS="fetch_items";
 
@@ -25,6 +25,14 @@ const itemsReducer = function(state = [], action){
       console.log(action.payload.data);
       return _.mapKeys(action.payload.data, "id"); //convert [] into list of objects with keys "id" from original array, "id" to be chnaged accordingly
       break;
+    case FETCH_ITEM:
+      console.log(action.payload.data);
+      return {...state, [action.pauload.data.id] : action.payload.data};
+      break;
+    case DELETE_POST:
+      return _.omit(state, action.payload);//returns new object, omit removes the pauload object from state object.
+      break;
+    default: return state;
   }
 
   return state;
