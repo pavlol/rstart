@@ -1,8 +1,12 @@
-import {combineReducers} from "redux"
-import profileReducer from './profileReducer'
-import itemsReducer from './itemsReducer'
+import {combineReducers} from "redux";
+import {reducer as formReducer} from "redux-form";
+import profileReducer from './profileReducer';
+import itemsReducer from './itemsReducer';
 //import settingsReducer from './settingsReducer'
-export default reducers = combineReducers({
+const reducers = combineReducers({
   user: profileReducer,
   items: itemsReducer,
+  form:formReducer,
 });
+
+export default reducers;

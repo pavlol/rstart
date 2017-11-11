@@ -7,7 +7,7 @@ import {
 import thunk from 'redux-thunk';
 import reducers from '../reducers/index';
 
-const store = createStore(reducers, {
+export const store = createStore(reducers, {
   user:{name:"Dave", age:"30", pic:["url1", "url2"],},
   items:{
     currentItem:{id:"1", name:"Beth", age:"29", pic:[]},
@@ -26,6 +26,6 @@ store.subscribe(()=>{
   console.log("store changed", store.getState());
 });
 
-store.dispatch({type:"UPDATE_OWN_PROFILE", payload:{name:"Dave2", age:"30", pic:["url1", "url2"],});
-store.dispatch({type:"GET_NEXT_ITEM", payload:{store.items.currentItem});
+store.dispatch({type:"UPDATE_OWN_PROFILE", payload:{name:"Dave2", age:"30", pic:["url1", "url2"]}});
+// store.dispatch({type:"GET_NEXT_ITEM", payload:{store.items.currentItem}});
 store.dispatch({type:"SET_SELECTED", payload:{id:"2", name:"Kate", age:"30", pic:[]}});

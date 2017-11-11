@@ -1,8 +1,22 @@
-import React, {Component} from 'react'
+import _ from 'lodash';
+import React, {Component} from 'react';
+import {connect} from "react-redux";
+import fetchItems from "../actions";
 
-export default class FrontPage extends Component {
+
+class FrontPage extends Component {
   constructor(props) {
     super(props);
+  }
+  componentDidMount(){
+    //this.props.fetchItems();//fetches data async using axios
+  }
+  renderItems(){
+    return _.map(this.props.items, item => {
+      return(
+        item
+      );
+    }) //allows to map through object instead of array
   }
   render(){
     return(
@@ -35,3 +49,7 @@ export default class FrontPage extends Component {
     )
   }
 }
+function mapStateToProps(state){
+  return {items:state.items}
+}
+export default connect(mapStateToProps, {fetchItems})(FrontPage);
