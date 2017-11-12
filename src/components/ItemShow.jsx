@@ -2,7 +2,10 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {fetchItem} from '../actions';
 
-class ShowItem extends React{
+class ShowItem extends Component{
+  constructor(props){
+    super(props);
+  }
   componentDidMount(){
     if(!this.props.item){  //prevent re-fetch if already exists
       const {id} = this.props.match.params;// this.props.match.params.id; //provided by react-router-dom
@@ -10,7 +13,7 @@ class ShowItem extends React{
       }
   }
   onDeleteClick(){
-      cosnt {id} = this.props.match.params;
+      const {id} = this.props.match.params;
       this.props.deleteItem(id, ()=>{
         this.props.history.push('/');
       })

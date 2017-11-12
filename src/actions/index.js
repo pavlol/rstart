@@ -26,16 +26,31 @@ export const getOwnProfile = (inputName, input) => ({
 });
 
 
-//example
-export default function fetchItems(){ //fetch all items
+//example without thunk
+// export default function fetchItems(){ //fetch all items
+//   const request = axios.get(`$(ROOT_URL)/items`);
+//
+//   return{
+//     type:FETCH_ITEMS,
+//     payload: request
+//   };
+// }
+//
+export function fetchItems(){ //fetch all items
   const request = axios.get(`$(ROOT_URL)/items`);
 
-  return{
-    type:FETCH_ITEMS,
-    payload: request
-  };
+  return (dispatch) =>{
+    request.then((data)=>{
+      dispatch({
+        type:FETCH_ITEMS,
+        payload: data});
+    })
+  }
 }
-export default function fetchItem(id){ //fetch single item
+
+
+
+export function fetchItem(id){ //fetch single item
   const request = axios.get(`$(ROOT_URL)/items/${id}`);
 
   return{

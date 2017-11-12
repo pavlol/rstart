@@ -9,7 +9,6 @@ class App extends Component {
   render() {
     return (
     <div>
-      <TopMenu></TopMenu>
       <FrontPage />
       <Footer />
     </div>

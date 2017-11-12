@@ -1,17 +1,25 @@
-import React, {Component} from 'react'
-import Logo from './Logo'
+import React, {Component} from 'react';
+import Logo from './Logo';
 
+const styles={
+
+}
 export default class TopMenu extends Component {
   constructor(props) {
     super(props);
   }
   render(){
     return(
-      <div>
-        <Logo title="South Derbshire Software Club" />
-        <ul className="pull-right">
-          <li><span className="btn btn-primary"></span></li>
-        </ul>
+      <div id="topMenu" >
+        <div id="topMenuLeft">
+          <Logo title="South Derbyshire Coding Club" />
+        </div>
+        <div id="topMenuRight">
+          <ul>
+            <li><a className="btn btn-lg btn-default">About</a></li>
+            <li><a className="btn btn-lg btn-success">Join</a></li>
+          </ul>
+      </div>
       </div>
     )
   }
