@@ -1,0 +1,157 @@
+#rootFrontPage section{
+  min-height: 400px;
+  height: 500px;
+  text-align: center;
+  vertical-align: middle;
+  display: table;
+  width: 96%;
+}
+#rootFrontPage section > div{
+  display: table-cell;
+  vertical-align: middle;
+}
+#frontPageBlock1{
+  background-color: #00333F;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100% !important;
+}
+#frontPageBlock1 h1{
+  margin-bottom : 40px;
+  font-weight: 600;
+  color: white;
+}
+#frontPageBlock1 h3{
+  color: white;
+}
+#frontPageBlock2{
+  background-color: white;
+  color: #000121;
+  width: 96%;
+  border: 10px solid gray;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 10px;
+}
+#frontPageBlock3 {
+  background-color: #00333F;
+  color: white;
+  width: 96%;
+  padding: 20px;
+  border: 10px solid gray;
+  border-radius: 10px;
+  margin: 30px;
+}
+#frontPageBlock3 h1{
+  margin-bottom: 50px;
+  color: #AA1925;
+  font-weight: 800;
+  border: 3px solid;
+}
+#frontPageBlock3 p {
+  /*color:white;*/
+  padding-top: 20px;
+  font-size: 24px;
+}
+.apply_large{
+  background: transparent;
+  color: white;
+  font-size: xx-large;
+  border: 2px solid white;
+  padding: 30px 150px;
+  cursor: pointer;
+}
+#frontPageBlockApply{
+  background-color: #00333F;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100% !important;
+}
+#frontPageBlockApply h4{
+  width:40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#frontPageBlockAbout{
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #AA1925;
+  font-size: large;
+  width: 100% !important;
+}
+#frontAboutTable{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95% !important;
+}
+#frontPageBlockAbout h2{
+  margin-top:50px;
+  font-weight: 600;
+}
+.priceTag{
+  font-size: xx-large;
+  font-weight: 800;
+}
+#frontPageBlockTimeline{
+  background-color: #00333F;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: large;
+  width: 100% !important;
+}
+#frontPageBlockTimeline h1{
+  font-size: 4.5rem;
+}
+#frontPageBlockTech{
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  font-size: large;
+  width: 100% !important;
+}
+#frontPageBlockTech h2{
+  font-weight: 600;
+  color: #AA1925;
+}
+#carouselIndicators{
+  width:800px;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightblue;
+  border-radius: 50px;
+}
+.carousel-item img{
+  height: 200px;
+  width:27%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.rotatorItem{
+  position: static;
+  padding:0 10px;
+  /*padding-top: 150px;
+  margin-top: 300px;*/
+}
+.carousel-item p, h3{
+  color:#000;
+}
+.carousel-control-next-icon{
+
+}

@@ -8,7 +8,7 @@ import thunk from 'redux-thunk';
 import promise from 'redux-promise';
 import reducers from '../reducers/index';
 
-//const createStoreWithMiddleware = applyMiddleware(promise)(createStore....)
+//const createStoreWithMiddleware = applyMiddleware(promise)(createStore)
 //export const store = createStoreWithMiddleware(reducers);
 
 export const store = createStore(reducers, {

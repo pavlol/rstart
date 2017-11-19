@@ -1,18 +1,6 @@
 form a{
   margin-left: 5px;
 }
-#rootFrontPage section{
-  min-height: 400px;
-  height: 500px;
-  text-align: center;
-  vertical-align: middle;
-  display: table;
-  width: 96%;
-}
-#rootFrontPage section > div{
-  display: table-cell;
-  vertical-align: middle;
-}
 #topMenu{
   background-color: gray;
   width:100%;
@@ -41,42 +29,3 @@ form a{
   display: inline;
   margin-right: 20px;
 }
-#frontPageBlock1{
-  background-color: #00333F;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  width: 100% !important;
-}
-/*#frontPageBlock1 > div{
-  display: table-cell;
-  vertical-align: middle;
-}*/
-
-#frontPageBlock2{
-  background-color: white;
-  color: #000121;
-  width: 96%;
-  border: 10px solid gray;
-  padding: 20px;
-  margin: 30px;
-  border-radius: 10px;
-}
-/*#frontPageBlock2 > div{
-  display: table-cell;
-  vertical-align: middle;
-}*/
-#frontPageBlock3{
-  background-color: #00333F;
-  color: white;
-  width: 96%;
-  border: 10px solid gray;
-  padding: 20px;
-  margin: 30px;
-  border-radius: 10px;
-}
-/*#frontPageBlock3 > div{
-  display: table-cell;
-  vertical-align: middle;
-}*/

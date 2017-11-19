@@ -16,6 +16,7 @@ import {
 import TopMenu from './components/TopMenu';
 import ItemShow from './components/ItemShow';
 import Form from './components/Form';
+import Draft from './components/Draft';
 
 
 
@@ -26,6 +27,7 @@ ReactDOM.render(
         <TopMenu />
           <Switch>
             <Route path="/about" component={App} />
+            <Route path="/ai" component={Draft} />
             <Route path="/items/new" component={Form} />
             <Route path="/items/:id" component={ItemShow} />
             <Route path="/" component={App} />

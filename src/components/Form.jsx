@@ -65,7 +65,7 @@ function validate(values){
 
 export default reduxForm({
   validate,
-  form:"PostNewForm"
+  form:"ItemNewForm"
 })(
   connect(null, {createItem})(Form)
 );
