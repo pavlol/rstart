@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import React, {Component} from 'react';
 import {connect} from "react-redux";
+import {Link} from 'react-router-dom';
 import {fetchItems} from "../actions";
 import './FrontPage.css';
 import topRowImage from '../img/topdownrownew.jpg';
@@ -45,7 +46,7 @@ class FrontPage extends Component {
         </section> */}
         <section id="frontPageBlock3">
           <div>
-            <h1>Vision and Goals</h1>
+            <h1>Mission and Goals</h1>
             <p>Learn how to create software</p>
             <p>Get help with your own project</p>
             <p>Bring your ideas to reality</p>
@@ -146,7 +147,8 @@ class FrontPage extends Component {
               APPLY NOW
             </h1>
             <h4>We are starting in the new year. There are only 10 places in the class. Apply early to avoid disappointment</h4>
-            <button className="btn  apply_large">Apply</button>
+            <Link id="btnJoin" className="btn apply_large" to="/apply">Apply</Link>
+            {/* <button className="btn apply_large">Apply</button> */}
           </div>
         </section>
       </div>

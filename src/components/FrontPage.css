@@ -40,7 +40,7 @@
   color: white;
   width: 96%;
   padding: 20px;
-  border: 10px solid gray;
+  border: 10px solid #AA1925;
   border-radius: 10px;
   margin: 30px;
 }
@@ -48,7 +48,10 @@
   margin-bottom: 50px;
   color: #AA1925;
   font-weight: 800;
-  border: 3px solid;
+  border: 3px solid white;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #frontPageBlock3 p {
   /*color:white;*/
@@ -62,6 +65,10 @@
   border: 2px solid white;
   padding: 30px 150px;
   cursor: pointer;
+  text-decoration: none;
+}
+.apply_large:hover{
+  color: white;
 }
 #frontPageBlockApply{
   background-color: #00333F;
@@ -72,7 +79,7 @@
   width: 100% !important;
 }
 #frontPageBlockApply h4{
-  width:40%;
+  width:50%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;

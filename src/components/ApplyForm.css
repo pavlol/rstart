@@ -1,0 +1,32 @@
+.applyFormBackground{
+  background-color: lightgray;
+  background-image: url('../img/students-overhead-discussion.jpg');
+  height:100vh;
+}
+.applyForm{
+  width:50%;
+  background-color: #AA1925;
+  color:white;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+#applyTopSpace{
+  height:60px;
+}
+.applyUserArea{
+  padding:20px 30px 20px 30px;
+}
+.apply_medium{
+  background: transparent;
+  color: white;
+  font-size: xx-large;
+  border: 2px solid white;
+  /*padding: 10px 100px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  width:100%;
+}
+.text-help{
+  color:orange;
+}

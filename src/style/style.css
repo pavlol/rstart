@@ -4,17 +4,27 @@ form a{
 #topMenu{
   background-color: gray;
   width:100%;
-  min-height: 70px;
+  /*min-height: 70px;*/
   color:white;
   padding:10px;
   text-align: center;
+  overflow: auto;
 }
 #topMenuLeft{
    float: left;
-   width:50%
+   width:50%;
 }
 #topMenuLeft h1 {
+  cursor:pointer;
   margin:0;
+}
+.homeLogoLink {
+  color: white;
+  text-decoration: none;
+}
+.homeLogoLink:hover {
+  color: white;
+  text-decoration: none;
 }
 #topMenuRight{
   margin-left:50%;
@@ -28,4 +38,7 @@ form a{
 #topMenuRight ul > li{
   display: inline;
   margin-right: 20px;
+}
+#btnJoin{
+  cursor: pointer;
 }

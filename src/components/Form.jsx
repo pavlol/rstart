@@ -36,7 +36,7 @@ class Form extends Component{
     return(
       <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
         <Field
-          label="First Name"
+          label="Name"
           name="firstname"
           component={this.renderField}
         />

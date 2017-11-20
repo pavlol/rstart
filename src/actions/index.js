@@ -1,10 +1,10 @@
 import axios from 'axios';
-
+import qs from 'qs';
 export const FETCH_ITEMS="fetch_items";
 export const FETCH_ITEM="fetch_item";
 export const CREATE_ITEM="create_item";
 export const DELETE_POST = "delete_item"
-const ROOT_URL = "someurl";
+const ROOT_URL = "http://localhost:8000";
 // export const getSettings = () => ({
 //   type:"GET_SETTINGS",
 //   payload : ""
@@ -60,9 +60,20 @@ export function fetchItem(id){ //fetch single item
 }
 
 export function createItem(values, callback){
-  const request = axios.post(`${ROOT_URL}/items/new...TODO.`, values)
+  console.log(values);
+  let key = localStorage.getItem("key");
+  if(!key){
+    key = Math.floor(Math.random()*999999);
+    localStorage.setItem("key", key);
+  }
+
+  console.log(key);
+  const valueWithKey = {...values, key:key}
+  let jsonString = qs.stringify(valueWithKey);
+  console.log(jsonString);
+  const request = axios.post(`${ROOT_URL}/apply`, jsonString)
   .then(()=>callback());
-  return{
+  return {
     type:CREATE_ITEM,
     payload:request
   }

@@ -27,7 +27,7 @@ export const store = createStore(reducers, {
 });
 
 store.subscribe(()=>{
-  console.log("store changed", store.getState());
+  // console.log("store changed", store.getState());
 });
 
 store.dispatch({type:"UPDATE_OWN_PROFILE", payload:{name:"Dave2", age:"30", pic:["url1", "url2"]}});

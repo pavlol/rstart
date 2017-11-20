@@ -14,7 +14,6 @@ const itemsReducer = function(state = [], action){
           return index;
         })
         let next = state.items[index+1];
-        console.log(next);
         state = {...state, currentItem: next};
       return state + action.payload;
       break;
@@ -22,11 +21,9 @@ const itemsReducer = function(state = [], action){
       return state = {...state, currentItem: action.payload};
       break;
     case FETCH_ITEMS:
-      console.log(action.payload.data);
       return _.mapKeys(action.payload.data, "id"); //convert [] into list of objects with keys "id" from original array, "id" to be chnaged accordingly
       break;
     case FETCH_ITEM:
-      console.log(action.payload.data);
       return {...state, [action.pauload.data.id] : action.payload.data};
       break;
     case DELETE_POST:
